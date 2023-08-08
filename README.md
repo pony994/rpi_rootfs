@@ -105,3 +105,9 @@ make
 
 Please refer to [README_building.md document](https://github.com/kclyu/rpi-webrtc-streamer/blob/master/README_building.md) document of Rpi-WebRTC-Streamer for WebRTC native code package Cross Compile.
  
+# fixing sudo UID 1000:
+
+# chown root:root /etc/sudoers
+# chmod u=r,g=r,o= /etc/sudoers
+# chown root:root /usr/lib/sudo/sudoers.so
+# chmod a=r,u+ws /usr/lib/sudo/sudoers.so
